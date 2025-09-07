@@ -53,11 +53,10 @@ public class DefaultBookService implements BookService {
     }
 
     @Override
-    public void updatePriceByBookId(Long bookId, Double price) {
+    public Book updatePriceByBookId(Long bookId, Double price) {
         Book book = getBookById(bookId);
         book.setPrice(price);
-        bookRepository.save(book);
+        return bookRepository.save(book);
     }
-
 
 }
