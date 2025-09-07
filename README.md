@@ -82,7 +82,8 @@ Response:
     "author": "John Doe",
     "genre": "Technology",
    "publications": "TechPress"
-  } ```
+  }
+```
 
 2. Get All Books
 
@@ -147,7 +148,8 @@ Response:
 Endpoint: PATCH /books/{id}
 
 Request Body:
-  ```{
+  ```
+  {
     "price": 34.99
   }
 ```
@@ -168,4 +170,6 @@ Response:
 Endpoint: DELETE /books/{id}
 
 Response:
-```STATUS.OK```
+``` 
+STATUS.OK
+```
