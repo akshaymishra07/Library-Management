@@ -63,7 +63,7 @@ The application will start on http://localhost:8080.
 Endpoint: POST /books
 
 Request Body:
-
+```
   {
     "title": "Spring Boot Essentials",
     "price": 29.99,
@@ -71,102 +71,101 @@ Request Body:
     "genre": "Technology",
     "publications": "TechPress"
   }
-
+```
 
 Response:
 
->  {
->   "id": 1,
->    "title": "Spring Boot Essentials",
->    "price": 29.99,
->    "author": "John Doe",
->    "genre": "Technology",
->   "publications": "TechPress"
->  }
+ ``` {
+   "id": 1,
+    "title": "Spring Boot Essentials",
+    "price": 29.99,
+    "author": "John Doe",
+    "genre": "Technology",
+   "publications": "TechPress"
+  } ```
 
 2. Get All Books
 
 Endpoint: GET /books
 
 Response:
-
->  [
->    {
->      "id": 1,
->      "title": "Spring Boot Essentials",
->      "price": 29.99,
->      "author": "John Doe",
->      "genre": "Technology",
->      "publications": "TechPress"
->    }
->  ]
-
+```
+[
+    {
+      "id": 1,
+      "title": "Spring Boot Essentials",
+      "price": 29.99,
+      "author": "John Doe",
+      "genre": "Technology",
+      "publications": "TechPress"
+    }
+  ]
+```
 3. Get a Book by ID
 
 Endpoint: GET /books/{id}
 
 Response:
-
->  {
->    "id": 1,
->    "title": "Spring Boot Essentials",
->    "price": 29.99,
->    "author": "John Doe",
->    "genre": "Technology",
->    "publications": "TechPress"
->  }
-
+```
+  {
+    "id": 1,
+    "title": "Spring Boot Essentials",
+    "price": 29.99,
+    "author": "John Doe",
+    "genre": "Technology",
+    "publications": "TechPress"
+  }
+```
 4. Update a Book
 
 Endpoint: PUT /books/{id}
 
 Request Body:
-
->  {
->    "title": "Spring Boot Advanced",
->    "price": 39.99,
->    "author": "Jane Doe",
->    "genre": "Technology",
->    "publications": "AdvancedPress"
->  }
-
+```
+  {
+    "title": "Spring Boot Advanced",
+    "price": 39.99,
+    "author": "Jane Doe",
+    "genre": "Technology",
+    "publications": "AdvancedPress"
+  }
+```
 
 Response:
-
->  {
->    "id": 1,
->    "title": "Spring Boot Advanced",
->    "price": 39.99,
->    "author": "Jane Doe",
->    "genre": "Technology",
->    "publications": "AdvancedPress"
->  }
-
+```
+  {
+    "id": 1,
+    "title": "Spring Boot Advanced",
+    "price": 39.99,
+    "author": "Jane Doe",
+    "genre": "Technology",
+    "publications": "AdvancedPress"
+  }
+```
 5. Partial Update (e.g., Update Price)
 
 Endpoint: PATCH /books/{id}
 
 Request Body:
-
->  {
->    "price": 34.99
->  }
-
+  ```{
+    "price": 34.99
+  }
+```
 
 Response:
-
->  {
->    "id": 1,
->    "title": "Spring Boot Advanced",
->    "price": 34.99,
->    "author": "Jane Doe",
->    "genre": "Technology",
->    "publications": "AdvancedPress"
->  }
-
+```
+  {
+    "id": 1,
+    "title": "Spring Boot Advanced",
+    "price": 34.99,
+    "author": "Jane Doe",
+    "genre": "Technology",
+    "publications": "AdvancedPress"
+  }
+```
 6. Delete a Book
 
->Endpoint: DELETE /books/{id}
+Endpoint: DELETE /books/{id}
 
 Response:
->STATUS.OK
+```STATUS.OK```
