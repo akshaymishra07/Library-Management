@@ -20,6 +20,7 @@ Maven: Build and dependency management.
 
 **Project Structure**
 
+```
 src/
  └── main/
      ├── java/
@@ -34,7 +35,7 @@ src/
      │                    └── impl/             # Service implementation
      └── resources/
           └── application.properties           # Application configuration
-
+```
 
 **Setup**
 
